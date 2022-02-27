@@ -1,7 +1,7 @@
 /*con esto saco el scroll*/
 *{
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 }
 
 body{
@@ -25,7 +25,9 @@ html{
 		'. imagen texto'
 		'pie pie pie';
 		grid-template-columns: 1fr 1fr 2fr;
-		grid-template-rows: auto;			
+		grid-template-rows: auto;	
+		margin-left: auto;
+		margin-right:auto;		
 }
 
 .container-formularios{
@@ -64,7 +66,7 @@ html{
 
 .footer{
 	grid-area: pie;
-	background-color: #FDA65D;
+	background-color: #C3DBD9;
 	font-family: tahoma;
    color: #51050F;
    font-size: 1.5rem;
@@ -125,13 +127,14 @@ html{
 }
 
 .navBackground {		
-	background-color: #BB6464;		
+	/*background-color: #BB6464;	*/	
 	text-align: left;
 	padding-left: 10px;	
 	padding-top: 10px;
 	height: 100%;
 	width: 60%;
 	border-radius: 5px;
+	background-image: linear-gradient(180deg, #BB6464, #CDB699, #C3DBD9);
 }
 
 .sucursalTexto{
@@ -149,6 +152,11 @@ html{
 li a{
 	text-decoration: none;
 	color: white;
+	transition: width 1s;
+}
+
+a:hover{
+	color: #BB6464;
 }
 
 
