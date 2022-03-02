@@ -126,9 +126,8 @@ html{
    
 }
 
-.navBackground {		
-	/*background-color: #BB6464;	*/	
-	text-align: left;
+.navBackground {
+	/*text-align: left;*/
 	padding-left: 10px;	
 	padding-top: 10px;
 	height: 100%;
