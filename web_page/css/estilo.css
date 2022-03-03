@@ -93,13 +93,13 @@ html{
 }
 
 .formularios{
-	width: 100%;
-	height: auto;
-	background: #BB6464;	
-	border: 0px;
+	/*width: 100%;
+	height: auto;*/
+	/*background: #BB6464;*/	
+	/*border: 0px;
 	margin-left: 350px;
    margin-right: 350px;
-	margin-top:40px;
+	margin-top:40px;*/
 	grid-area: texto;
 }
 
@@ -171,14 +171,14 @@ h1{
 
 
 h4{
-	color: slategrey;
+	/*color: slategrey;
 	font-family: tahoma;
 	font-size: 16px;
 	font-weight: normal;
 	text-align: justify;	
 	line-height: 30px;	
 	padding-right: 25px;
-	padding-bottom: 25px;	
+	padding-bottom: 25px;*/	
 }
 
 

@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contacto</title>
-	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<!--IMPORTANTE: el último estilo que especfique va a sobreescribir a los anteriores-->
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="fondito">
 	<!-- fila de logo + nav --> 
-	<header>
-		<img class="logo" src="https://scalebranding.com/wp-content/uploads/2021/06/Nature-Yoga-02.jpg" height="75" width="75" align="right">
+	<header>		
 		<nav class="navBackground">
 			<ul class="estiloLista">
 				<li><a href="../index.html">Inicio</a></li>
@@ -22,37 +23,50 @@
 	</header>	
 	<section>
 		<h1>Contacto</h1>
-	</section>	
-	<div class="formularios">
-		
-		<section >
-			<article>
-				<form action="#">
-					<label for="nombre">Nombre:
-						<input class="entradasTexto" type="text" name="email"><br>
-					</label>
-					<label for="email">E-mail:
-						<input class="entradasTexto" type="email" placeholder="mail@mail.com" name="email"><br>
-					</label>
-					<label for="mensaje">Mensaje:<br>
-						<textarea class="entradasTexto"></textarea>
-					</label> <br>
-					
-					
-					<div class="newsLetter">
-						¿Deseas recibir nuestro newsletter?
-						<input type="checkbox" name="acepta" value="1">
-					</div>
-					<input type="submit" class="boton" value="Enviar">
-					<input type="reset" class="boton" value="Limpiar">
-				</form>
-			</article>
-		</section>
-	</div>
+	</section>		
 	
-	<!-- inicio de footer --> 
-	<footer id="mi_footer">
-		<h5 align="center">Central: 18 de Julio 2020 | Tel.: 2400 4040 | Montevideo, Uruguay 2022</h5>
-	</footer>
+	<form class="form-horizontal formularios container" role="form">
+	<div class="form-group">
+	    <label for="nombre" class="col-lg-2 control-label">Nombre</label>
+	    <div class="col-lg-10">
+	      <input type="text" class="form-control" id="nombre"
+	             placeholder="Nombre">
+	    </div>
+	 </div>
+	  <div class="form-group">
+	    <label for="email" class="col-lg-2 control-label">Email</label>
+	    <div class="col-lg-10">
+	      <input type="email" class="form-control" id="email"
+	             placeholder="mail@mail.com">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="mensaje" class="col-lg-2 control-label">Mensaje</label>
+	    <div class="col-lg-10">
+	     	<textarea class="form-control" rows="7"></textarea>
+	    </div>
+	  </div>
+
+	  <div class="form-group newsLetter">
+	  	<div class="col-lg-offset-2 col-lg-10">	
+		  <label>
+		    <input type="checkbox" value="">
+		    ¿Deseas recibir nuestro newsletter?
+		  </label>
+		</div>
+	  </div>
+	 
+	 
+	  <div class="form-group">
+	    <div class="col-lg-offset-2 col-lg-10">
+	      <button type="submit" class="btn btn-default btn-lg active">Enviar</button>
+	      <button type="reset" class="btn btn-default btn-lg active">Limpiar</button>
+	    </div>
+	  </div>	 
+	</form>
+		
+	<section class="footer">					
+				Central: 18 de Julio 2020 | Tel.: 2400 4040 | Montevideo, Uruguay 2022			
+		</section>
 </body>
 </html>
