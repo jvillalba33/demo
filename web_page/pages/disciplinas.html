@@ -3,14 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--IMPORTANTE: el último estilo que especfique va a sobreescribir a los anteriores-->
+    <link rel="stylesheet" href="../css/estilo.css">
 	<title>Disciplinas</title>
-	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
-	<div class="container-area">
+<nav class="navbar navbar-expand-lg p-4 mb-2 bg-info bg-opacity-25 ">	  
+
+  <div class="collapse navbar-collapse justify-content-center container-fluid" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+    <li class="nav-item ">
+        <a class="nav-link text-secondary" href="../index.html">Inicio <span class="sr-only">(estás aquí)</span></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link text-secondary" href="equipo.html">Equipo <span class="sr-only"></span></a>
+      </li>
+      <a class="navbar-brand text-secondary" id="marca" href="#">Hacemos Yoga</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+	          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+	          aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+      <li class="nav-item">
+        <a class="nav-link active" href="disciplinas.html">Disciplinas</a>
+      </li>     
+      <li class="nav-item">
+        <a class="nav-link text-secondary" href="sucursales.html">Sucursales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-secondary" href="contacto.html">Contáctanos</a>
+      </li>
+    </ul>	   
+  </div>
+</nav>
+<div class="noticia">
+  <img class="izquierda" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hatha-yoga-que-es-2-womenshealth-1620818976.jpg">
+  <aside>
+  	<p class="h1 text-secondary">Hatha Yoga</p>
+  	<p class="lead text-secondary h6 texto-der-izq">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <button type="button" class="btn btn-info text-white opacity-75">Mirá nuestros horarios</button></aside>
+   
+</div>	
+
+<div class="noticia">
+  	<img class="derecha" src="https://www.aboutespanol.com/thmb/oX9ZV43eccdSdUQG-HM20HlgYdQ=/3456x2592/smart/filters:no_upscale()/Kundaliniyoga-5ae31ddb3128340037dd1d22.jpg">
+	<aside >
+		<p class="h1 text-secondary">Kundalini Yoga</p>
+		<p class="lead text-secondary h6 texto-der-izq">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, 	mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+	<button type="button" class="btn btn-info text-white opacity-75">Mirá nuestros horarios</button>
+	</aside>
+  <div class="reset"></div>	  
+</div>
+	<!--div class="container-area">
 		<section class="nombre"><h1>Disciplinas</h1></section>
 		<section class="logo"></section>
 		<section class="menu">
@@ -35,7 +82,7 @@
 				<h3 class="estiloTitulo">Kundalini Yoga</h3>
 				<h4 class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque, mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit, molestias tenetur, nesciunt dolorum doloremque perferendis ex! Eius, voluptatem. Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Eligendi tenetur aperiam laudantium nobis repellat quibusdam cum debitis, consectetur dolorem fugit magnam veniam non saepe, reiciendis, tempora nihil quia nisi, harum? Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Magnam cum excepturi ut ipsa veniam suscipit nostrum aut nulla voluptas, blanditiis accusamus soluta temporibus laborum atque maiores amet incidunt placeat maxime.</h4>			
 		</section>			
-	</div>	
+	</div-->	
 	<div style="background-color: #C3DBD9;">
 		<footer class="text-center text-lg-start  text-muted" >
 	  
@@ -45,12 +92,12 @@
 		      <span>Encuéntranos en las redes:</span>
 		    </div>
 		    <div >
-			  	<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-google"></a>
-				<a href="#" class="fa fa-instagram"></a>
-				<a href="#" class="fa fa-linkedin"></a>
-				<a href="#" class="fa fa-slack"></a>
+			  	<a href="#" class="fa fa-facebook text-secondary"></a>
+				<a href="#" class="fa fa-twitter text-secondary"></a>
+				<a href="#" class="fa fa-google text-secondary"></a>
+				<a href="#" class="fa fa-instagram text-secondary"></a>
+				<a href="#" class="fa fa-linkedin text-secondary"></a>
+				<a href="#" class="fa fa-slack text-secondary"></a>
 		  	</div>
 		  </section>	
 		  <section class="">
@@ -60,7 +107,7 @@
 		        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 		          <!-- Content -->
 		          <h6 class="text-uppercase fw-bold mb-4">
-		            <i class="fas fa-gem me-3"></i>HACEMOS YOGA
+		            <i class="fas fa-gem me-3"></i>Hacemos Yoga
 		          </h6>
 		          <p>
 		            Lograr vivir en armonía con nuestro presente, nuestra alma y nuestro cuerpo.
@@ -73,19 +120,19 @@
 		            Sucursales
 		          </h6>
 		          <p>
-		            <a href="#!" class="text-reset">Sucursal 1</a>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 1</a>
 		          </p>
 		          <p>
-		            <a href="#!" class="text-reset">Sucursal 2</a>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 2</a>
 		          </p>
 		          <p>
-		            <a href="#!" class="text-reset">Sucursal 3</a>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 3</a>
 		          </p>
 		          <p>
-		            <a href="#!" class="text-reset">Sucursal 4</a>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 4</a>
 		          </p>
 		           <p>
-		            <a href="#!" class="text-reset">Sucursal 5</a>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 5</a>
 		          </p>
 		        </div>		       
 		      	
@@ -119,7 +166,7 @@
 		      </div>     
 		    </div>
 		  </section> 
-		  <div class="text-center p-4">© 2021 Copyright: Hacemos yoga</div>  
+		  <div class="text-center p-4">© 2021 Copyright: Hacemos Yoga</div>  
 		</footer>
 	</div>
 </body>

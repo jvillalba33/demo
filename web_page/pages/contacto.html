@@ -3,70 +3,173 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contacto</title>
+	<title class="text">Contacto</title>
 	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--IMPORTANTE: el último estilo que especfique va a sobreescribir a los anteriores-->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="fondito">
-	<!-- fila de logo + nav --> 
-	<header>		
-		<nav class="navBackground">
-			<ul class="estiloLista">
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="equipo.html">Equipo</a></li>
-				<li><a href="disciplinas.html">Disciplinas</a></li>
-				<li><a href="sucursales.html">Sucursales</a></li>
-				<li><a href="contacto.html">Contacto</a></li>				
-			</ul>	
-		</nav>
-	</header>	
-	<section>
-		<h1>Contacto</h1>
-	</section>		
-	
-	<form class="form-horizontal formularios container" role="form">
-	<div class="form-group">
-	    <label for="nombre" class="col-lg-2 control-label">Nombre</label>
-	    <div class="col-lg-10">
-	      <input type="text" class="form-control" id="nombre"
-	             placeholder="Nombre">
-	    </div>
-	 </div>
-	  <div class="form-group">
-	    <label for="email" class="col-lg-2 control-label">Email</label>
-	    <div class="col-lg-10">
-	      <input type="email" class="form-control" id="email"
-	             placeholder="mail@mail.com">
-	    </div>
-	  </div>
-	  <div class="form-group">
-	    <label for="mensaje" class="col-lg-2 control-label">Mensaje</label>
-	    <div class="col-lg-10">
-	     	<textarea class="form-control" rows="7"></textarea>
-	    </div>
+	<nav class="navbar navbar-expand-lg p-4 mb-2 bg-info bg-opacity-25 ">	  
+
+	  <div class="collapse navbar-collapse justify-content-center container-fluid" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto ">
+	    <li class="nav-item">
+	        <a class="nav-link text-secondary" href="../index.html">Inicio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link text-secondary" href="equipo.html">Equipo <span class="sr-only"></span></a>
+	      </li>
+	      <a class="navbar-brand text-secondary" id="marca" href="#">Hacemos Yoga</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+		          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+		          aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+	      <li class="nav-item">
+	        <a class="nav-link text-secondary" href="disciplinas.html">Disciplinas</a>
+	      </li>     
+	      <li class="nav-item">
+	        <a class="nav-link text-secondary" href="sucursales.html">Sucursales</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link active" href="contacto.html">Contáctanos</a>
+	      </li>
+	    </ul>	   
 	  </div>
 
-	  <div class="form-group newsLetter">
-	  	<div class="col-lg-offset-2 col-lg-10">	
-		  <label>
-		    <input type="checkbox" value="">
-		    ¿Deseas recibir nuestro newsletter?
-		  </label>
-		</div>
-	  </div>
-	 
-	 
-	  <div class="form-group">
-	    <div class="col-lg-offset-2 col-lg-10">
-	      <button type="submit" class="btn btn-default btn-lg active">Enviar</button>
-	      <button type="reset" class="btn btn-default btn-lg active">Limpiar</button>
-	    </div>
-	  </div>	 
-	</form>
+	</nav>	
+	<section class="container">
+		<h1 class="text-secondary">Contacto</h1>		
 		
-	<section class="footer">					
-				Central: 18 de Julio 2020 | Tel.: 2400 4040 | Montevideo, Uruguay 2022			
-		</section>
+		<form class="form-horizontal " role="form">
+		<div class="form-group">
+		    <label for="nombre" class="col-lg-2 control-label">Nombre</label>
+		    <div class="col-lg-8">
+		      <input type="text" class="form-control" id="nombre"
+		             placeholder="Nombre">
+		    </div>
+		 </div>
+		  <div class="form-group">
+		    <label for="email" class="col-lg-2 control-label">Email</label>
+		    <div class="col-lg-8">
+		      <input type="email" class="form-control" id="email"
+		             placeholder="mail@mail.com">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="mensaje" class="col-lg-2 control-label">Mensaje</label>
+		    <div class="col-lg-8">
+		     	<textarea class="form-control" rows="7"></textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group newsLetter">
+		  	<div class="col-lg-offset-2 col-lg-10">	
+			  <label>
+			    <input type="checkbox" value="">
+			    ¿Deseas recibir nuestro newsletter?
+			  </label>
+			</div>
+		  </div>
+		 
+		 
+		  <div class="form-group">
+		    <div class="col-lg-offset-2 col-lg-10">
+		      <button type="submit" class="btn btn-secondary">Enviar</button>
+		      <button type="reset" class="btn btn-secondary">Limpiar</button>
+		    </div>
+		  </div>	 
+		</form>
+		
+	</section>	
+
+	<div style="background-color: #C3DBD9;">
+		<footer class="text-center text-lg-start  text-muted" >
+	  
+		  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+		   
+		    <div class="me-5 d-none d-lg-block">
+		      <span>Encuéntranos en las redes:</span>
+		    </div>
+		    <div >
+			  	<a href="#" class="fa fa-facebook text-secondary"></a>
+				<a href="#" class="fa fa-twitter text-secondary"></a>
+				<a href="#" class="fa fa-google text-secondary"></a>
+				<a href="#" class="fa fa-instagram text-secondary"></a>
+				<a href="#" class="fa fa-linkedin text-secondary"></a>
+				<a href="#" class="fa fa-slack text-secondary"></a>
+		  	</div>
+		  </section>	
+		  <section class="">
+		    <div class="container text-center text-md-start mt-5">      
+		      <div class="row mt-3">
+		        <!-- Grid column -->
+		        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+		          <!-- Content -->
+		          <h6 class="text-uppercase fw-bold mb-4">
+		            <i class="fas fa-gem me-3"></i>Hacemos Yoga
+		          </h6>
+		          <p>
+		            Lograr vivir en armonía con nuestro presente, nuestra alma y nuestro cuerpo.
+		          </p>
+		        </div>
+		        
+		        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+		          <!-- Links -->
+		          <h6 class="text-uppercase fw-bold mb-4">
+		            Sucursales
+		          </h6>
+		          <p>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 1</a>
+		          </p>
+		          <p>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 2</a>
+		          </p>
+		          <p>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 3</a>
+		          </p>
+		          <p>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 4</a>
+		          </p>
+		           <p>
+		            <a href="pages/sucursales.html" class="text-reset">Sucursal 5</a>
+		          </p>
+		        </div>		       
+		      	
+		       
+		        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">         
+		          <h6 class="text-uppercase fw-bold mb-4">
+		            Links de Interés
+		          </h6>
+		          <p>
+		            <a href="#!" class="text-reset">Federación de Yoga</a>
+		          </p>
+		          <p>
+		            <a href="#!" class="text-reset">Día Internacional del Yoga</a>
+		          </p>
+		          <p>
+		            <a href="#!" class="text-reset">Equipo</a>
+		          </p>
+		          <p>
+		            <a href="#!" class="text-reset">Disciplinas</a>
+		          </p>
+		        </div>
+		        
+		        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">         
+		          <h6 class="text-uppercase fw-bold mb-4">
+		            Contacto
+		          </h6>
+		          <p> Central: 18 de Julio 2020</p>
+		          <p>info@mail.com</p>
+		          <p>Tel.: 2400 4040</p>
+		        </div>       
+		      </div>     
+		    </div>
+		  </section> 
+		  <div class="text-center p-4">© 2021 Copyright: Hacemos Yoga</div>  
+		</footer>
+	</div>
 </body>
 </html>
