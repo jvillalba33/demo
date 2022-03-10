@@ -29,16 +29,6 @@
 	background-color: #E2DEA9;
 }
 
-/*.cartel-bienvenido.h1{
-	background-color: #AD8B73;
-	padding-top: 10x;
-	text-align: center;
-}*/
-
-.texto-bienvenido{
-	background-color: white;
-}
-
 .container-info{
 		display:grid;
 		gap: 15px;
@@ -88,37 +78,6 @@
    
 }
 
-.calendario-wrapper {
-  max-width: 280px;
-  font: 100% system-ui;
-}
-.calendario {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.primer-dia {
-  grid-column-start: 3;
-}
-
-
-.nombre-dia {
-  background: #eee;
-}
-
-.eventos {
-  text-align: center;
-}
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-li {
-  padding: 2px;
-}
-
 div.noticia {  
   width: 60%;
   margin: 20px auto;  
@@ -148,16 +107,7 @@ div.reset {
   clear: both;
 }
 
-.sucursalTexto{
-	display:block ;	
-	font-family: tahoma;
-	font-size: 15px;
-	font-weight: normal;
-	text-align: left;	
-	top: 10px;
-	bottom: 10px;
-	padding: 10px;
-}
+
 
 
 
