@@ -1,1 +1,96 @@
-.calendario-wrapper{max-width:280px;font:100% system-ui}.calendario-wrapper h1{text-align:center}.calendario-wrapper h3{text-align:center}.calendario-wrapper ol{display:grid;grid-template-columns:repeat(7, 1fr);list-style:none;margin:0;padding:0;text-align:center}.calendario-wrapper ol li{padding:2px}.calendario-wrapper ol li .primer-dia{grid-column-start:3}.calendario-wrapper ol li .nombre-dia{background:#eee}*{margin:0;padding:0}
+.calendario-wrapper {
+  max-width: 280px;
+  font: 100% system-ui;
+}
+.calendario-wrapper h1 {
+  text-align: center;
+}
+.calendario-wrapper h3 {
+  text-align: center;
+}
+.calendario-wrapper ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.calendario-wrapper ol li {
+  padding: 2px;
+}
+.calendario-wrapper ol li .primer-dia {
+  grid-column-start: 3;
+}
+.calendario-wrapper ol li .nombre-dia {
+  background: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.font {
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.bg-image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.bg-image p {
+  font-family: "Georgia", cursive;
+  font-size: 200%;
+}
+
+.container-info {
+  display: grid;
+  gap: 15px;
+  height: 420px;
+  grid-template-areas: "imagen texto calendario";
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
+  margin-left: 0;
+  background-color: #E2DEA9;
+}
+
+.container-bienvenida {
+  display: grid;
+  height: 100px;
+  width: 100%;
+  grid-template-areas: "bienvenida logo";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding-bottom: 15px;
+}
+
+.bienvenida {
+  display: grid;
+  height: 100%;
+}
+
+.logo {
+  display: grid;
+  height: 100%;
+}
+
+.info {
+  display: grid;
+  grid-area: texto;
+  margin: 15px;
+}
+.info h4 {
+  text-align: justify;
+  font-size: 110%;
+}
+
+.imagen {
+  display: grid;
+  grid-area: imagen;
+}
+
+/*# sourceMappingURL=index.min.css.map */

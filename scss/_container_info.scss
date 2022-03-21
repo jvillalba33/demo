@@ -1,0 +1,57 @@
+
+$bgColor: #E2DEA9;
+$size15px: 15px;
+$grid: grid;
+
+.container-info{
+	display: $grid;
+	gap: $size15px;
+	height: 420px;			
+	grid-template-areas: 
+	'imagen texto calendario';		
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto;	
+	margin-left: 0;
+	background-color: $bgColor;	
+			
+}
+
+.container-bienvenida{
+	display: $grid;	
+	height: 100px;
+	width: 100%;		
+	grid-template-areas: 
+	'bienvenida logo';		
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	padding-bottom: $size15px;
+}
+
+
+.bienvenida{
+	display: grid;
+	height: 100%;
+}
+
+.logo{
+	display: grid;
+	height: 100%;
+}
+
+.info{
+	display: grid;
+	grid-area: texto;		
+	margin: $size15px;
+
+	h4{
+		text-align: justify;
+		font-size: 110%;
+	}	
+}
+
+.imagen{
+	
+	display: $grid;
+	grid-area: imagen; 
+   
+}

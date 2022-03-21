@@ -1,0 +1,28 @@
+div.noticia {  
+    width: 60%;
+    margin: 20px auto;  
+    padding: 15px;
+
+    img.izquierda {
+        float: left;
+        margin-right: 15px;
+        width: 50%;  
+        margin-bottom: 30px;        
+    }
+
+    img.derecha {
+      float: right;
+      margin-left: 15px;
+      width: 50%;  
+    }
+
+    .texto-der-izq{ 
+      margin-bottom: 6%;
+    }
+
+    .reset {
+      clear: both;
+    }
+  
+}
+
