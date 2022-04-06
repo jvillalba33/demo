@@ -13,83 +13,77 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--IMPORTANTE: el último estilo que especfique va a sobreescribir a los anteriores-->
-    <link rel="stylesheet" href="../css/estilo.css">
+	<!--SASS-->
+    <link rel="stylesheet" href="../css/contacto.min.css">
 </head>
 <body >
-	<nav class="navbar navbar-expand-lg p-4 mb-2 bg-info bg-opacity-25 ">	  
-
-	  <div class="collapse navbar-collapse justify-content-center container-fluid" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto ">
-	    <li class="nav-item">
-	        <a class="nav-link text-secondary" href="../index.html">Inicio</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link text-secondary" href="equipo.html">Equipo <span class="sr-only"></span></a>
-	      </li>
-	      <a class="navbar-brand text-secondary" id="marca" href="#">Hacemos Yoga</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" 
-		          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-		          aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-	      <li class="nav-item">
-	        <a class="nav-link text-secondary" href="disciplinas.html">Disciplinas</a>
-	      </li>     
-	      <li class="nav-item">
-	        <a class="nav-link text-secondary" href="sucursales.html">Sucursales</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link active" href="contacto.html">Contáctanos</a>
-	      </li>
-	    </ul>	   
-	  </div>
-
-	</nav>	
-	<section class="container">
-		<h1 class="text-secondary">Contacto</h1>		
-		
+	<h1 class="marca text-center text-secondary">Hacemos Yoga</h1>
+	  <hr>
+	  <nav class="navbar navbar-expand-lg navbar-light bg-info bg-opacity-25 shadow p-3 mb-5">
+	   
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link" href="../index.html">Inicio</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="equipo.html">Equipo</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="disciplinas.html">Disciplinas</a>
+	        </li>
+	         <li class="nav-item">
+	          <a class="nav-link" href="sucursales.html">Sucursales</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link activo" href="contacto.html">Contacto</a>
+	        </li>
+	        
+	      </ul>
+	    </div>
+	  </nav>
+	<div class="container col-lg-5 mt-5">
 		<form class="form-horizontal " role="form">
-		<div class="form-group">
-		    <label for="nombre" class="col-lg-2 control-label">Nombre</label>
-		    <div class="col-lg-8">
-		      <input type="text" class="form-control" id="nombre"
+			<div class="form-group">			
+			    <label for="nombre" class="control-label">Nombre</label>		    
+		    	<div>
+		      		<input type="text" class="form-control shadow-sm p-3 mb-1 bg-white rounded" id="nombre"
 		             placeholder="Nombre">
-		    </div>
-		 </div>
-		  <div class="form-group">
-		    <label for="email" class="col-lg-2 control-label">Email</label>
-		    <div class="col-lg-8">
-		      <input type="email" class="form-control" id="email"
-		             placeholder="mail@mail.com">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="mensaje" class="col-lg-2 control-label">Mensaje</label>
-		    <div class="col-lg-8">
-		     	<textarea class="form-control" rows="7"></textarea>
-		    </div>
-		  </div>
-
-		  <div class="form-group newsLetter">
-		  	<div class="col-lg-offset-2 col-lg-10">	
-			  <label>
-			    <input type="checkbox" value="">
-			    ¿Deseas recibir nuestro newsletter?
-			  </label>
+		    	</div>			    
 			</div>
-		  </div>
-		 
-		 
-		  <div class="form-group">
-		    <div class="col-lg-offset-2 col-lg-10">
-		      <button type="submit" class="btn btn-secondary">Enviar</button>
-		      <button type="reset" class="btn btn-secondary">Limpiar</button>
-		    </div>
-		  </div>	 
-		</form>
-		
-	</section>	
+			<div class="form-group">
+			    <label for="email" class="control-label">Email</label>
+			    <div>
+			      <input type="email" class="form-control shadow-sm p-3 mb-1 bg-white rounded" id="email"
+			             placeholder="mail@mail.com">
+			    </div>
+			</div>
+			<div class="form-group">
+			    <label for="mensaje" class="control-label">Mensaje</label>
+			    <div>
+			     	<textarea class="form-control shadow-sm p-3 mb-5 bg-white rounded" rows="7"></textarea>
+			    </div>
+			</div>
+			<div class="form-group newsLetter">
+			  	<div >	
+				  <label>
+				    <input type="checkbox" value="" class="shadow-sm p-3 mb-5 bg-white rounded">
+				    ¿Deseas recibir nuestro newsletter?
+				  </label>
+				</div>
+			</div>
+			<div class="form-group">
+			    <div >
+			      <button type="submit" class="btn btn-secondary shadow-sm p-2 rounded">Enviar</button>
+			      <button type="reset" class="btn btn-secondary shadow-sm p-2 rounded">Limpiar</button>
+			    </div>
+			</div>	 
+		</form>		
+	</div>	
+	<hr>
 
 	<div style="background-color: #C3DBD9;">
 		<footer class="text-center text-lg-start  text-muted" >
@@ -128,19 +122,19 @@
 		            Sucursales
 		          </h6>
 		          <p>
-		            <a href="pages/sucursales.html" class="text-reset">Sucursal 1</a>
+		            <a href="pages/sucursales.html" class="footer text-decoration-none">Sucursal 1</a>
 		          </p>
 		          <p>
-		            <a href="pages/sucursales.html" class="text-reset">Sucursal 2</a>
+		            <a href="pages/sucursales.html" class="footer text-decoration-none">Sucursal 2</a>
 		          </p>
 		          <p>
-		            <a href="pages/sucursales.html" class="text-reset">Sucursal 3</a>
+		            <a href="pages/sucursales.html" class="footer text-decoration-none">Sucursal 3</a>
 		          </p>
 		          <p>
-		            <a href="pages/sucursales.html" class="text-reset">Sucursal 4</a>
+		            <a href="pages/sucursales.html" class="footer text-decoration-none">Sucursal 4</a>
 		          </p>
 		           <p>
-		            <a href="pages/sucursales.html" class="text-reset">Sucursal 5</a>
+		            <a href="pages/sucursales.html" class="footer text-decoration-none">Sucursal 5</a>
 		          </p>
 		        </div>		       
 		      	
@@ -150,16 +144,16 @@
 		            Links de Interés
 		          </h6>
 		          <p>
-		            <a href="#!" class="text-reset">Federación de Yoga</a>
+		            <a href="#!" class="footer text-decoration-none">Federación de Yoga</a>
 		          </p>
 		          <p>
-		            <a href="#!" class="text-reset">Día Internacional del Yoga</a>
+		            <a href="#!" class="footer text-decoration-none">Día Internacional del Yoga</a>
 		          </p>
 		          <p>
-		            <a href="#!" class="text-reset">Equipo</a>
+		            <a href="#!" class="footer text-decoration-none">Equipo</a>
 		          </p>
 		          <p>
-		            <a href="#!" class="text-reset">Disciplinas</a>
+		            <a href="#!" class="footer text-decoration-none">Disciplinas</a>
 		          </p>
 		        </div>
 		        
@@ -174,7 +168,7 @@
 		      </div>     
 		    </div>
 		  </section> 
-		  <div class="text-center p-4">© 2021 Copyright: Hacemos Yoga</div>  
+		  <div class="text-center p-4">© 2022 Copyright: Hacemos Yoga</div>  
 		</footer>
 	</div>
 </body>

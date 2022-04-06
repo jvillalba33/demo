@@ -1,6 +1,9 @@
 .calendario-wrapper {
-  max-width: 280px;
-  font: 100% system-ui;
+  display: grid;
+  max-width: 80%;
+  font: 90% system-ui;
+  background: #FFA8A8;
+  height: 100%;
 }
 .calendario-wrapper h1 {
   text-align: center;
@@ -12,18 +15,22 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
 }
-.calendario-wrapper ol li {
-  padding: 2px;
-}
-.calendario-wrapper ol li .primer-dia {
+.calendario-wrapper ol li.primer-dia {
   grid-column-start: 3;
 }
-.calendario-wrapper ol li .nombre-dia {
-  background: #eee;
+.calendario-wrapper ol li.nombre-dia {
+  background: #FAD9E6;
+  font-weight: bold;
+}
+.calendario-wrapper ol li:hover {
+  background-color: grey;
+  color: white;
+  font-size: 15px;
+  box-shadow: 1px 1px 2px #000000;
 }
 
 * {
@@ -35,53 +42,33 @@
   font-family: "Tangerine", cursive;
   font-weight: bold;
   font-size: 200%;
+  font-color: grey;
 }
 
 .bg-image {
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
-  height: 700px;
 }
 .bg-image p {
   font-family: "Georgia", cursive;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 .container-info {
   display: grid;
-  gap: 15px;
-  height: 420px;
-  grid-template-areas: "imagen texto calendario";
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto;
-  margin-left: 0;
-  background-color: #E2DEA9;
-}
-
-.container-bienvenida {
-  display: grid;
-  height: 100px;
-  width: 100%;
-  grid-template-areas: "bienvenida logo";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  padding-bottom: 15px;
-}
-
-.bienvenida {
-  display: grid;
+  /*gap: $size15px;*/
   height: 100%;
-}
-
-.logo {
-  display: grid;
-  height: 100%;
+  grid-template-areas: "imagen texto";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  /*margin-left: 0;*/
+  background-color: #E05595B;
 }
 
 .info {
   display: grid;
   grid-area: texto;
-  margin: 15px;
+  /*margin: $size15px;*/
 }
 .info h4 {
   text-align: justify;
@@ -91,6 +78,38 @@
 .imagen {
   display: grid;
   grid-area: imagen;
+  /*padding: 3%;*/
+  width: 60%;
+}
+
+.marca {
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 600%;
+}
+
+li.nav-item a {
+  transition: background-color 0.5s;
+  color: grey;
+  font-size: 25px;
+}
+li.nav-item a:hover {
+  background-color: #39AEA9;
+  color: white;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #000000;
+}
+li.nav-item a.activo {
+  font-weight: bold;
+}
+
+a.footer {
+  color: grey;
+  font-size: 15px;
+}
+
+a.footer:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=index.min.css.map */

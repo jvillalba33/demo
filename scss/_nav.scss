@@ -1,0 +1,36 @@
+.marca {
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+  font-size: 600%; 
+  
+}
+
+
+li.nav-item{
+    a{
+    transition: background-color .5s;
+    color: grey;
+    font-size: 25px;
+    }
+
+    a:hover{
+        background-color: #39AEA9;
+        color: white;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #000000;
+    }
+
+    a.activo{
+        font-weight: bold; 
+    }
+}
+
+a.footer{    
+    color: grey;
+    font-size: 15px;
+}
+
+a.footer:hover{    
+    color: white;    
+}
+

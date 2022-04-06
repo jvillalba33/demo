@@ -1,9 +1,3 @@
-/* Error: Undefined variable.
- *   ,
- * 6 |       text-align: $center;
- *   |                   ^^^^^^^
- *   '
- *   calendario.scss 6:19  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",

@@ -28,4 +28,27 @@ a.footer:hover {
   color: white;
 }
 
-/*# sourceMappingURL=sucursales.min.css.map */
+div.noticia {
+  width: 60%;
+  margin: 20px auto;
+  padding: 15px;
+}
+div.noticia img.izquierda {
+  float: left;
+  margin-right: 15px;
+  width: 50%;
+  margin-bottom: 30px;
+}
+div.noticia img.derecha {
+  float: right;
+  margin-left: 15px;
+  width: 50%;
+}
+div.noticia .texto-der-izq {
+  margin-bottom: 6%;
+}
+div.noticia .reset {
+  clear: both;
+}
+
+/*# sourceMappingURL=disciplinas.min.css.map */

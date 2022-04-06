@@ -1,9 +1,13 @@
 $center: center;
-$bgColor: #eee;
+$bgColor: #FFA8A8;
+$nomDiaColor: #FAD9E6;
 
 .calendario-wrapper {
-    max-width: 280px;
-    font: 100% system-ui;
+    display: grid;
+    max-width: 80%;
+    font: 90% system-ui;
+    background: $bgColor;
+    height:100%;
 
     h1{
       text-align: $center;
@@ -17,21 +21,27 @@ $bgColor: #eee;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       list-style: none;
-      margin: 0;
-      padding: 0;
+      margin: 10px;
+      padding: 10px;
       text-align: $center;
+       
 
-      li {
-        padding: 2px;
-
-        .primer-dia {
+      li.primer-dia {
           grid-column-start: 3;
-        }
-
-        .nombre-dia {
-          background: $bgColor;
-        }
       }
+
+      li.nombre-dia {
+        background: $nomDiaColor;
+        font-weight: bold;          
+      } 
+
+      li:hover{
+        background-color: grey;
+        color: white;
+        font-size: 15px;
+        box-shadow: 1px 1px 2px #000000;
+    }                 
+    
     }
 }
 
