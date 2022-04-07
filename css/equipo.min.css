@@ -21,6 +21,10 @@ div.noticia .reset {
   clear: both;
 }
 
+/*@font-face{
+    font-family: 'Tangerine';    
+    src: url('Tangerine-Bold.ttf');   
+}*/
 .marca {
   font-family: "Tangerine", cursive;
   font-weight: bold;
