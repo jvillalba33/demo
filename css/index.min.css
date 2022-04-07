@@ -38,11 +38,38 @@
   padding: 0;
 }
 
-.font {
+/*@font-face{
+    font-family: 'Tangerine';    
+    src: url('Tangerine-Bold.ttf');   
+}*/
+.marca {
   font-family: "Tangerine", cursive;
   font-weight: bold;
-  font-size: 200%;
-  font-color: grey;
+  font-size: 600%;
+}
+
+li.nav-item a {
+  transition: background-color 0.5s;
+  color: grey;
+  font-size: 25px;
+}
+li.nav-item a:hover {
+  background-color: #39AEA9;
+  color: white;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px #000000;
+}
+li.nav-item a.activo {
+  font-weight: bold;
+}
+
+a.footer {
+  color: grey;
+  font-size: 15px;
+}
+
+a.footer:hover {
+  color: white;
 }
 
 .bg-image {
@@ -80,36 +107,6 @@
   grid-area: imagen;
   /*padding: 3%;*/
   width: 60%;
-}
-
-.marca {
-  font-family: "Tangerine", cursive;
-  font-weight: bold;
-  font-size: 600%;
-}
-
-li.nav-item a {
-  transition: background-color 0.5s;
-  color: grey;
-  font-size: 25px;
-}
-li.nav-item a:hover {
-  background-color: #39AEA9;
-  color: white;
-  font-size: 30px;
-  box-shadow: 1px 1px 2px #000000;
-}
-li.nav-item a.activo {
-  font-weight: bold;
-}
-
-a.footer {
-  color: grey;
-  font-size: 15px;
-}
-
-a.footer:hover {
-  color: white;
 }
 
 /*# sourceMappingURL=index.min.css.map */
